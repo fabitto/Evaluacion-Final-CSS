@@ -1,0 +1,183 @@
+/*General*/
+body{
+	font-family: Dancing Script;
+	background-color: #02010a;
+}
+img{
+	-webkit-filter: drop-shadow(2px 2px #02010a); 
+}
+.contenido{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*Header*/
+header{
+	color: white;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+header h1 {
+	padding: 0% 0% 0% 2%;
+	width: 40%;
+	float: left;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+/*menu*/
+#navcontenido{
+	width: 50%;
+    float: left;
+	padding-top: 1%;
+}
+ul {
+	list-style-type: none;
+	text-align: right;
+	font-size: 1.3em;
+}
+ul li {
+	display: inline;
+	padding: 2%;
+}
+ul li a {
+	color: #ffffff;	
+}
+a.actual{
+	text-decoration: none;
+}
+
+/*Imagenes*/
+#imgcentral{
+	width: 100%;
+	text-align: center;
+	background-color: #82c3a6
+}
+#imgsec{
+    border: 1px;
+    text-align: center;
+    background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+	color: black;
+}
+#imgsec div span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 15px 0px;
+	
+}
+#imgsec div a{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#paisaje:hover{
+	border: 2px;
+    transform: rotate(10deg);
+    -webkit-filter: drop-shadow(2px 2px #82c3a6);
+}
+#retratos:hover{
+	border: 2px;
+	transform: translate3d(20px, -5px, 0px);
+    -webkit-filter: drop-shadow(2px 2px #82c3a6);
+}
+
+/*Footer*/
+footer {
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.footerbox img{
+		width: 30px;
+		height: 30px;
+}
+.footerbox span{
+	font-size: 12px;
+}
+
+/*Ajustes WebSite*/
+
+@media (max-width: 900px) {
+   .contenido{
+   	width: 100%;
+   }
+   header {
+	min-height: 200px;
+}
+header h1 {
+	width: 100%;
+	text-align: center;
+}
+#navcontenido {
+	width: 100%;
+}
+ul {
+	text-align: center;
+} 
+#gato {
+	max-width: 96%;
+	margin: 2%;
+}
+#imgcentral {
+	max-width: 900px;
+	width: 100%;
+	background-color: #82c3a6;
+}
+#imgsec div {
+	max-width: 100%;
+}
+#imgsec div a img {
+	max-width: 90%;
+	border: 1px;
+	margin: 5%;
+}
+footer {
+	width: 100%;
+	min-height: 300px;
+}
+.footerbox {
+	width: 100%;
+	height: auto;
+	padding: 1%2.5% 1% 2.5%;
+}
+}
+/*movil*/
+@media (min-width: 900px) {
+	.contenido {
+	width: 900px;
+}
+header {
+	width: 900px;
+	min-height: 80px;
+}
+#imgcentral {
+	min-width: 900px;
+	height: auto;
+	background-color: #82c3a6;
+}
+#gato {
+	max-width: 80%;
+	margin: 2% 10%;
+}
+#imgsec div {
+	max-width: 50%;
+}
+#imgsec div a img {
+	max-width: 90%;
+	border: 1px;
+	margin: 5%;
+}
+footer {
+	width: 900px;
+	min-height: 200px;
+}
+.footerbox {
+	width: 20%;
+	height: auto;
+	padding: 1%2.5% 1% 2.5%;
+}
+}
